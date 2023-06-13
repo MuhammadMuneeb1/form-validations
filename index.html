@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" />
+      </div>
+      <div>
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName" />
+      </div>
+      <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" />
+      </div>
+      <div>
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" />
+      </div>
+      <div>
+        <label for="degreeType">Degree Type:</label>
+        <select id="degreeType" name="degreeType">
+          <option value="">Select Degree Type</option>
+          <option value="associate">Associate Degree</option>
+          <option value="bachelor">Bachelor's Degree</option>
+        </select>
+      </div>
+      <div>
+        <label for="degreeDuration">Degree Duration:</label>
+        <select id="degreeDuration" name="degreeDuration">
+          <option value="">Select Degree Duration</option>
+        </select>
+      </div>
+      <div>
+        <label for="degreeName">Degree Name:</label>
+        <select id="degreeName" name="degreeName">
+          <option value="">Select Degree Name</option>
+        </select>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <input
+          type="checkbox"
+          id="showPassword"
+          onchange="togglePasswordVisibility()"
+        />
+        Show Password
+      </div>
+      <div class="btn">
+        <button type="submit" id="submitBtn">Submit</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
